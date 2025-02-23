@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     height: 100vh;
     width: 100%;
@@ -8,12 +14,50 @@ body{
 }
 
 .apresentacao{
+    margin: 10% 10%; /*margem de 10 na alutra e 10 na horizontal*/
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 10%;
+    justify-content: space-between;
 }
+
+
 
 .titulo-destaque{
     color: #22D4FD;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column; /*disponibiliza flexibilidade aos elementos, dá a propriedade de coluna para permitir espaçamento*/ 
+    gap: 40px; /*espaçamento entre cada elemento de classes dentro desse container da section*/
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: "Krona One", serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.apresentacao__links__link{
+   background-color: #22D4FD; 
+   width: 280px;
+   text-align: center;/*alinha o conteudo no centro da div*/
+   font-size: 24px;
+   padding: 21.5px 0; /*primeiro age na vertical e outro na horizontal. Se ficar puro age em todos eixos*/
+   border-radius: 16px;
+   font-weight: 600; /*peso da fonte*/
+   text-decoration: none;
+   color: #000; /*deixa a cor do texto neutra pret transparente*/
+   font-family:  "Montserrat", serif;
 }
