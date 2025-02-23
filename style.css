@@ -30,7 +30,7 @@ body{
     width: 615px;
     display: flex;
     flex-direction: column; /*disponibiliza flexibilidade aos elementos, dá a propriedade de coluna para permitir espaçamento*/ 
-    gap: 40px; /*espaçamento entre cada elemento de classes dentro desse container da section*/
+    gap: 40px; /*espaçamento entre cada elemento de classes dentro desse container da*/
 }
 
 .apresentacao__conteudo__titulo{
