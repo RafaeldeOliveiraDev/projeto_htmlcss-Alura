@@ -14,13 +14,11 @@ body{
 }
 
 .apresentacao{
-    margin: 10% 10%; /*margem de 10 na alutra e 10 na horizontal*/
+    margin: 18% 18%; /*margem de 10 na alutra e 10 na horizontal*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 .titulo-destaque{
     color: #22D4FD;
@@ -45,19 +43,38 @@ body{
 
 .apresentacao__links{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 
 }
 
+.apresentacao__links__subtitulo{
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .apresentacao__links__link{
-   background-color: #22D4FD; 
-   width: 280px;
+   width: 378px;
+   display: flex;
+   gap: 16px;
+   justify-content: center;
    text-align: center;/*alinha o conteudo no centro da div*/
    font-size: 24px;
    padding: 21.5px 0; /*primeiro age na vertical e outro na horizontal. Se ficar puro age em todos eixos*/
-   border-radius: 16px;
+   border-radius: 8px;
+   border: 2px solid #22D4FD;
    font-weight: 600; /*peso da fonte*/
    text-decoration: none;
-   color: #000; /*deixa a cor do texto neutra pret transparente*/
+   color: #f6f6f6; /*deixa a cor do texto neutra pret transparente*/
    font-family:  "Montserrat", serif;
+
+}
+
+.apresentacao__links__link:hover{
+    background-color: #272727;
+    border-color: #7FFFD4;
+    padding: 4%;
 }
