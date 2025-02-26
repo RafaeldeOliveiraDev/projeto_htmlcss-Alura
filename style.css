@@ -1,27 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --cor-principal: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover-: #272727;
+
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: "Montserrat", serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
-    background-color: #000;
+    background-color: var(--cor-principal);
     box-sizing: border-box;
     justify-content: center;
-    color: #fff;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+   background-color: var(--cor-terciaria);
+   padding: 22px;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cabecalho__menu__links{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    color: var(--cor-principal);
 }
 
 .apresentacao{
-    margin: 18% 18%; /*margem de 10 na alutra e 10 na horizontal*/
+    padding: 8% 18%; /*margem de 10 na alutra e 10 na horizontal*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.titulo-destaque{
-    color: #22D4FD;
 }
 
 .apresentacao__conteudo {
@@ -33,12 +58,17 @@ body{
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-primaria);
 }
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
 
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links{
@@ -51,7 +81,7 @@ body{
 }
 
 .apresentacao__links__subtitulo{
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -65,16 +95,34 @@ body{
    font-size: 24px;
    padding: 21.5px 0; /*primeiro age na vertical e outro na horizontal. Se ficar puro age em todos eixos*/
    border-radius: 8px;
-   border: 2px solid #22D4FD;
+   border: 2px solid var(--cor-terciaria);
    font-weight: 600; /*peso da fonte*/
    text-decoration: none;
-   color: #f6f6f6; /*deixa a cor do texto neutra pret transparente*/
-   font-family:  "Montserrat", serif;
+   color: var(--cor-secundaria); /*deixa a cor do texto neutra pret transparente*/
+   font-family:  var(--fonte-secundaria);
 
 }
 
 .apresentacao__links__link:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover-);
     border-color: #7FFFD4;
     padding: 4%;
 }
+
+.rodape{
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
